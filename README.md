@@ -5,11 +5,26 @@
 
 <br><br>
 
+<p> 머신 러닝을 이용하여 이미지를 통해 사용자의 신체 정보를 추출하는 자동 피팅 시스템 </p>
+<p> 웹 또는 앱을 이용하여 사용자가 자신의 정면 전신 이미지와 측면 전신 이미지 그리고 키 정보를 입력한다. 이 데이터를 이용해 사용자의 신체 치수 정보를 추출한다. 추출 시에는 미리 객체 추출, 신체 부위 인식 등을 학습한 데이터를 이용한다. 추출된 신체 정보를 바탕으로 사용자가 구입하고자 하는 의류와 매칭하여 가상 피팅된 결과를 시각적으로 제공한다.</p>
+
+<br><br>
+
 #### Joomla를 이용한 Web Page 및 Menu 구성
 ![default](https://user-images.githubusercontent.com/21214309/48612944-b9d34b80-e9cd-11e8-95fd-43d0b72b4bcb.JPG)
 
+- 기본적으로 동작하는 바탕인 웹페이지를 제작
+
+<br><br>
+
 #### Database Structure
 ![default](https://user-images.githubusercontent.com/21214309/48612806-5812e180-e9cd-11e8-9f36-8fdff8ce9530.JPG)
+
+- 사용자 INFO : User_info, Bidy_value Table
+- Login : Current_login_user Table
+- Cloth INFO : Cloth_info1, Cloth_info2 Table
+
+<br><br>
 
 #### Image Processing Program Flow
 
