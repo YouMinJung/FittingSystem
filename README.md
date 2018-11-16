@@ -80,5 +80,5 @@ PDF File : [ShowU.pdf](https://github.com/YouMinJung/FittingSystem/files/2588666
 <br>
   
 ##### Final Version
-PDF File :
+PDF File : [Gradu_paper.pdf](https://github.com/YouMinJung/FittingSystem/files/2589148/Gradu_paper.pdf)
 
