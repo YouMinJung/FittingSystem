@@ -37,10 +37,12 @@
   - Android App에서 제공하는 스마트폰의 기울기 및 고도 정보를 바탕으로 Warpping을 수행
   - 기울어진 정도에 따라 위의 계산 방식을 이용해 이미지 왜곡 조정
   - Calibration 진행
+  ![noname013](https://user-images.githubusercontent.com/21214309/48617107-d7f27900-e9d8-11e8-9b68-7ae27da27c78.png)
   - 내부 카메라 파라미터를 이용해 스마트폰 기종에 따른 Calibration 진행 
 4) 이미지의 배경 제거
   - 첫 번째 버전에서는 Grab-Cut Algorithm 사용
   - 두 번째 버전에서는 학습된 모델을 바탕으로 사람 객체를 인식하고 그 부위를 기준으로 Grab-Cut 진행
+  ![noname01](https://user-images.githubusercontent.com/21214309/48617105-d7f27900-e9d8-11e8-9a2b-63acb956691f.png)
   - 세 번째 버전에서는 DCNN을 이용한 Deeplab을 이용해 Image Segmentation을 진행
 5) 이미지의 왜곽 특징 추출 (세 번째 버전에서는 불필요)
 6) 2개의 이미지를 객체의 머리 끝부터 발끝까지로 Cut
@@ -50,7 +52,7 @@
   - 세 번째 버전에서는 DNN을 기반으로한 OpenPose에서의 Confidence Map을 통한 각 신체 부위 인식
   
 9) 인식 후, 그 높이를 기준으로 객체의 첫점과 끝점을 계산
-
+![default](https://user-images.githubusercontent.com/21214309/48617104-d759e280-e9d8-11e8-807e-e3cf77068e8c.JPG)
 10) 2개의 이미지 각각의 신체 치수를 종합하여 계산
 11) 최종 각 신체 부위의 신체 치수를 반환
 
@@ -71,6 +73,7 @@ PDF File : [ShowU.pdf](https://github.com/YouMinJung/FittingSystem/files/2588666
 
 
 
-![noname01](https://user-images.githubusercontent.com/21214309/48616221-4c77e880-e9d6-11e8-9d02-812279bd857c.png)
-![noname011](https://user-images.githubusercontent.com/21214309/48616222-4c77e880-e9d6-11e8-8b7a-8da631554fcc.png)
-![noname012](https://user-images.githubusercontent.com/21214309/48616223-4d107f00-e9d6-11e8-9850-e99695d31d3d.png)
+![default](https://user-images.githubusercontent.com/21214309/48617104-d759e280-e9d8-11e8-807e-e3cf77068e8c.JPG)
+![noname01](https://user-images.githubusercontent.com/21214309/48617105-d7f27900-e9d8-11e8-9a2b-63acb956691f.png)
+![noname013](https://user-images.githubusercontent.com/21214309/48617107-d7f27900-e9d8-11e8-9b68-7ae27da27c78.png)
+
