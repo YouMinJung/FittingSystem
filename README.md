@@ -6,7 +6,11 @@
 <br><br>
 
 #### Joomla를 이용한 Web Page 및 Menu 구성
+![1](https://user-images.githubusercontent.com/21214309/48612807-5812e180-e9cd-11e8-966c-ad223ad97892.JPG)
+![3](https://user-images.githubusercontent.com/21214309/48612808-5812e180-e9cd-11e8-95fe-1018a103b0b0.JPG)
 
+#### Database Structure
+![default](https://user-images.githubusercontent.com/21214309/48612806-5812e180-e9cd-11e8-9f36-8fdff8ce9530.JPG)
 
 #### Image Processing Program Flow
 
@@ -22,4 +26,4 @@
 <br>
 
 Video URL : https://youtu.be/zMSdjQNTNw4 <br>
-PDF File : 
+PDF File : [ShowU.pdf](https://github.com/YouMinJung/FittingSystem/files/2588666/ShowU.pdf)
