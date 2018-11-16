@@ -1,4 +1,4 @@
-# < FittingSystem > Capston Design 2
+# < FittingSystem > Capston Design 2 - 2017.12
 
 <p> Environment : Sublime Text, Visual Studio 2017, PyCharm, Jupyter Notebook in Windows,
 <p> Language : C/C++, PHP, Java-Script, Python
