@@ -27,7 +27,34 @@
 <br><br>
 
 #### Image Processing Program Flow
+![noname01](https://user-images.githubusercontent.com/21214309/48616221-4c77e880-e9d6-11e8-9d02-812279bd857c.png)
 
+1) 사용자의 신장정보를 받음
+2) 스마트폰의 이미지는 크기가 크므로 작은 사이즈로 Size Normalization 수행
+3) 이미지 왜곡 조정
+  - Warpping using degree
+  ![noname011](https://user-images.githubusercontent.com/21214309/48616222-4c77e880-e9d6-11e8-8b7a-8da631554fcc.png)
+  - Android App에서 제공하는 스마트폰의 기울기 및 고도 정보를 바탕으로 Warpping을 수행
+  - 기울어진 정도에 따라 위의 계산 방식을 이용해 이미지 왜곡 조정
+  - Calibration 진행
+  - 내부 카메라 파라미터를 이용해 스마트폰 기종에 따른 Calibration 진행 
+4) 이미지의 배경 제거
+  - 첫 번째 버전에서는 Grab-Cut Algorithm 사용
+  - 두 번째 버전에서는 학습된 모델을 바탕으로 사람 객체를 인식하고 그 부위를 기준으로 Grab-Cut 진행
+  - 세 번째 버전에서는 DCNN을 이용한 Deeplab을 이용해 Image Segmentation을 진행
+5) 이미지의 왜곽 특징 추출 (세 번째 버전에서는 불필요)
+6) 2개의 이미지를 객체의 머리 끝부터 발끝까지로 Cut
+7) 2개의 이미지 속의 객체 크기를 맞춰주기 위해 Resize 진행
+8) 각 신체 부위를 인식
+  - 첫 번째, 두 번째 버전에서는 객체의 눈 높이 비율과 신체 각 부위의 비율에 따른 통계 방식으로 신체 부위 인식
+  - 세 번째 버전에서는 DNN을 기반으로한 OpenPose에서의 Confidence Map을 통한 각 신체 부위 인식
+  
+9) 인식 후, 그 높이를 기준으로 객체의 첫점과 끝점을 계산
+
+10) 2개의 이미지 각각의 신체 치수를 종합하여 계산
+11) 최종 각 신체 부위의 신체 치수를 반환
+
+<br><br>
 
 #### Result Avatar Information Flow
 1) 사용자 체형정보와 DB에 저장된 옷의 수치들을 비교한다.
@@ -41,3 +68,9 @@
 
 Video URL : https://youtu.be/zMSdjQNTNw4 <br>
 PDF File : [ShowU.pdf](https://github.com/YouMinJung/FittingSystem/files/2588666/ShowU.pdf)
+
+
+
+![noname01](https://user-images.githubusercontent.com/21214309/48616221-4c77e880-e9d6-11e8-9d02-812279bd857c.png)
+![noname011](https://user-images.githubusercontent.com/21214309/48616222-4c77e880-e9d6-11e8-8b7a-8da631554fcc.png)
+![noname012](https://user-images.githubusercontent.com/21214309/48616223-4d107f00-e9d6-11e8-9850-e99695d31d3d.png)
