@@ -29,9 +29,9 @@
 #### Image Processing Program Flow
 ![noname01](https://user-images.githubusercontent.com/21214309/48616221-4c77e880-e9d6-11e8-9d02-812279bd857c.png)
 
-1) 사용자의 신장정보를 받음
-2) 스마트폰의 이미지는 크기가 크므로 작은 사이즈로 Size Normalization 수행
-3) 이미지 왜곡 조정
+##### 1) 사용자의 신장정보를 받음
+##### 2) 스마트폰의 이미지는 크기가 크므로 작은 사이즈로 Size Normalization 수행
+##### 3) 이미지 왜곡 조정
   - Warpping using degree
   ![noname011](https://user-images.githubusercontent.com/21214309/48616222-4c77e880-e9d6-11e8-8b7a-8da631554fcc.png)
   - Android App에서 제공하는 스마트폰의 기울기 및 고도 정보를 바탕으로 Warpping을 수행
@@ -40,24 +40,24 @@
   ![noname013](https://user-images.githubusercontent.com/21214309/48617107-d7f27900-e9d8-11e8-9b68-7ae27da27c78.png)
   - 내부 카메라 파라미터를 이용해 스마트폰 기종에 따른 Calibration 진행 
 
-4) 이미지의 배경 제거
+##### 4) 이미지의 배경 제거
   - 첫 번째 버전에서는 Grab-Cut Algorithm 사용
   - 두 번째 버전에서는 학습된 모델을 바탕으로 사람 객체를 인식하고 그 부위를 기준으로 Grab-Cut 진행
   ![noname01](https://user-images.githubusercontent.com/21214309/48617105-d7f27900-e9d8-11e8-9a2b-63acb956691f.png)
   - 세 번째 버전에서는 DCNN을 이용한 Deeplab을 이용해 Image Segmentation을 진행
 
-5) 이미지의 왜곽 특징 추출 (세 번째 버전에서는 불필요)
-6) 2개의 이미지를 객체의 머리 끝부터 발끝까지로 Cut
-7) 2개의 이미지 속의 객체 크기를 맞춰주기 위해 Resize 진행
-8) 각 신체 부위를 인식
+##### 5) 이미지의 왜곽 특징 추출 (세 번째 버전에서는 불필요)
+##### 6) 2개의 이미지를 객체의 머리 끝부터 발끝까지로 Cut
+##### 7) 2개의 이미지 속의 객체 크기를 맞춰주기 위해 Resize 진행
+##### 8) 각 신체 부위를 인식
   - 첫 번째, 두 번째 버전에서는 객체의 눈 높이 비율과 신체 각 부위의 비율에 따른 통계 방식으로 신체 부위 인식
   - 세 번째 버전에서는 DNN을 기반으로한 OpenPose에서의 Confidence Map을 통한 각 신체 부위 인식
   ![noname01](https://user-images.githubusercontent.com/21214309/48617210-24d64f80-e9d9-11e8-91ab-b148614ef2a7.png)
 
-9) 인식 후, 그 높이를 기준으로 객체의 첫점과 끝점을 계산
+##### 9) 인식 후, 그 높이를 기준으로 객체의 첫점과 끝점을 계산
 ![default](https://user-images.githubusercontent.com/21214309/48617104-d759e280-e9d8-11e8-807e-e3cf77068e8c.JPG)
-10) 2개의 이미지 각각의 신체 치수를 종합하여 계산
-11) 최종 각 신체 부위의 신체 치수를 반환
+##### 10) 2개의 이미지 각각의 신체 치수를 종합하여 계산
+##### 11) 최종 각 신체 부위의 신체 치수를 반환
 
 <br><br>
 
