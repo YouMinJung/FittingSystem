@@ -54,7 +54,7 @@
   - 세 번째 버전에서는 DNN을 기반으로한 OpenPose에서의 Confidence Map을 통한 각 신체 부위 인식
   ![noname01](https://user-images.githubusercontent.com/21214309/48617210-24d64f80-e9d9-11e8-91ab-b148614ef2a7.png)
 
-##### 9) 인식 후, 그 높이를 기준으로 객체의 첫점과 끝점을 계산
+##### 9) 인식 후, 그 높이를 기준으로 객체의 첫점과 끝점을 계산 (Left : Third Version, Right : First Version)
 ![default](https://user-images.githubusercontent.com/21214309/48617104-d759e280-e9d8-11e8-807e-e3cf77068e8c.JPG)
 ##### 10) 2개의 이미지 각각의 신체 치수를 종합하여 계산
 ##### 11) 최종 각 신체 부위의 신체 치수를 반환
