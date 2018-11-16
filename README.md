@@ -62,6 +62,8 @@
 <br><br>
 
 #### Result Avatar Information Flow
+![noname01](https://user-images.githubusercontent.com/21214309/48617374-a75f0f00-e9d9-11e8-9468-d3d4f5a76140.png)
+
 1) 사용자 체형정보와 DB에 저장된 옷의 수치들을 비교한다.
 2) 각각의 수치에 맞는 최적의 사이즈를 구한다.
 3) 각 부위의 결과 사이즈들이 일치하는지 확인한다.
@@ -71,10 +73,12 @@
 
 <br>
 
-<p> First Version </p>
+##### First Version
 Video URL : https://youtu.be/zMSdjQNTNw4 <br>
-PDF File : [ShowU.pdf](https://github.com/YouMinJung/FittingSystem/files/2588666/ShowU.pdf) <br>
+PDF File : [ShowU.pdf](https://github.com/YouMinJung/FittingSystem/files/2588666/ShowU.pdf) 
+
+<br>
   
-<p> Final Version </p>
+##### Final Version
 PDF File :
 
